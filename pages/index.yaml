@@ -1,0 +1,34 @@
+- label: "'PPPoE username'"
+  parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Username
+  type: "'device-link'"
+  components:
+    - type: "'parameter'"
+- label: "'RX'"
+  parameter: VirtualParameters.OpticalRXPower
+- label: "'Temp'"
+  parameter: VirtualParameters.OpticalTemperature
+- label: "'PPPoE IP'"
+  parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.ExternalIPAddress
+- label: "'SSID1'"
+  parameter: InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.SSID
+- label: "'STA'"
+  parameter: InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.TotalAssociations
+- element: "'span.inform'"
+  label: "'Last inform'"
+  parameter: DATE_STRING(Events.Inform)
+  type: "'container'"
+  components:
+    - type: "'parameter'"
+    - chart: "'online'"
+      type: "'overview-dot'"
+- label: "'Serial number'"
+  parameter: DeviceID.SerialNumber
+- label: "'Product class'"
+  parameter: DeviceID.ProductClass
+- label: "'Software version'"
+  parameter: InternetGatewayDevice.DeviceInfo.SoftwareVersion
+- label: "'Tags'"
+  parameter: Tags
+  type: "'tags'"
+  unsortable: true
+  writable: false

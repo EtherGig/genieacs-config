@@ -1,0 +1,8 @@
+- label: "'Serial number'"
+  parameter: DeviceID.SerialNumber
+  type: "'string'"
+- label: "'Product class'"
+  parameter: DeviceID.ProductClass
+  type: "'string'"
+- label: "'Tag'"
+  type: "'tag'"

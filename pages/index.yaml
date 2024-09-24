@@ -1,4 +1,22 @@
-- label: "'PPPoE username'"
+- chart: "'online-short'"
+  type: "'overview-dot'"
+- type: "'summon-button'"
+  parameters:
+    - InternetGatewayDevice.DeviceInfo.HardwareVersion
+    - InternetGatewayDevice.DeviceInfo.SoftwareVersion
+    - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.MACAddress
+    - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.ExternalIPAddress
+    - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANPPPConnection.*.Username
+    - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANPPPConnection.*.Password
+    - InternetGatewayDevice.LANDevice.*.WLANConfiguration.*.SSID
+    - InternetGatewayDevice.LANDevice.*.WLANConfiguration.*.KeyPassphrase
+    - InternetGatewayDevice.LANDevice.*.Hosts.Host.*.HostName
+    - InternetGatewayDevice.LANDevice.*.Hosts.Host.*.IPAddress
+    - InternetGatewayDevice.LANDevice.*.Hosts.Host.*.MACAddress
+    - VirtualParameters.OpticalRXPower
+    - VirtualParameters.OpticalTemperature
+    - InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.TotalAssociations
+- label: "'PPP User'"
   parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Username
   type: "'device-link'"
   components:
@@ -7,7 +25,7 @@
   parameter: VirtualParameters.OpticalRXPower
 - label: "'Temp'"
   parameter: VirtualParameters.OpticalTemperature
-- label: "'PPPoE IP'"
+- label: "'PPP IP'"
   parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.ExternalIPAddress
 - label: "'SSID1'"
   parameter: InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.SSID
@@ -19,8 +37,6 @@
   type: "'container'"
   components:
     - type: "'parameter'"
-    - chart: "'online'"
-      type: "'overview-dot'"
 - label: "'Serial number'"
   parameter: DeviceID.SerialNumber
 - label: "'Product class'"

@@ -1,3 +1,16 @@
+online-short:
+  label: "'Online status'"
+  slices:
+    1_onlineNow:
+      color: "'#31a354'"
+      filter: Events.Inform > NOW() - 5 * 60 * 1000
+    2_past24:
+      color: "'#a1d99b'"
+      filter: Events.Inform > (NOW() - 5 * 60 * 1000) - (24 * 60 * 60 * 1000) AND
+        Events.Inform < (NOW() - 5 * 60 * 1000)
+    3_others:
+      color: "'#e5f5e0'"
+      filter: Events.Inform < (NOW() - 5 * 60 * 1000) - (24 * 60 * 60 * 1000)
 online:
   label: "'Online status'"
   slices:

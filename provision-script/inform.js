@@ -1,3 +1,5 @@
+const acsurl = "http://acs.annurnetwork.com:7547"
+
 // Device ID as user name
 const username = declare("DeviceID.ID", {value: 1}).value[0]
 
@@ -25,5 +27,5 @@ declare("Device.ManagementServer.ConnectionRequestPassword", {value: daily}, {va
 declare("Device.ManagementServer.PeriodicInformEnable", {value: daily}, {value: true});
 declare("Device.ManagementServer.PeriodicInformInterval", {value: daily}, {value: informInterval});
 declare("Device.ManagementServer.PeriodicInformTime", {value: daily}, {value: informTime});
-declare("InternetGatewayDevice.ManagementServer.URL", {value: daily}, {value: "http://acs.annurnetwork.com:7547"});
+declare("InternetGatewayDevice.ManagementServer.URL", {value: daily}, {value: acsurl});
 

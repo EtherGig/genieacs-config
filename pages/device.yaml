@@ -169,6 +169,7 @@
       type: "'container'"
       components:
         - "''"
+# WAN IP Section
 - element: "'div'"
   type: "'container'"
   components:
@@ -176,7 +177,341 @@
       type: "'container'"
       components:
         - "'📥 WAN IP'"
-- type: "'container'"
+- filter: VirtualParameters.KnownManufacturer = "Huawei Technologies Co., Ltd"
+  type: "'container'"
+  components:
+    - chart: "'online-short'"
+      type: "'overview-dot'"
+    - type: "'summon-button'"
+      parameters:
+        - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.*
+        - VirtualParameters.VLAN-IP1
+        - VirtualParameters.VLAN-IP2
+        - VirtualParameters.VLAN-IP3
+        - VirtualParameters.VLAN-IP4
+        - VirtualParameters.Binding-IP1
+        - VirtualParameters.Binding-IP2
+        - VirtualParameters.Binding-IP3
+        - VirtualParameters.Binding-IP4
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'VLAN'"
+          parameter: X_HW_VLAN
+        - label: "'Mode'"
+          parameter: AddressingType
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'Subnet Mask'"
+          parameter: SubnetMask
+        - label: "'Gateway'"
+          parameter: DefaultGateway
+        - label: "'DNS'"
+          parameter: DNSServers
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'VLAN'"
+          parameter: X_HW_VLAN
+        - label: "'Mode'"
+          parameter: AddressingType
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'Subnet Mask'"
+          parameter: SubnetMask
+        - label: "'Gateway'"
+          parameter: DefaultGateway
+        - label: "'DNS'"
+          parameter: DNSServers
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.3.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'VLAN'"
+          parameter: X_HW_VLAN
+        - label: "'Mode'"
+          parameter: AddressingType
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'Subnet Mask'"
+          parameter: SubnetMask
+        - label: "'Gateway'"
+          parameter: DefaultGateway
+        - label: "'DNS'"
+          parameter: DNSServers
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.4.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'VLAN'"
+          parameter: X_HW_VLAN
+        - label: "'Mode'"
+          parameter: AddressingType
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'Subnet Mask'"
+          parameter: SubnetMask
+        - label: "'Gateway'"
+          parameter: DefaultGateway
+        - label: "'DNS'"
+          parameter: DNSServers
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+- filter: >
+          VirtualParameters.KnownManufacturer = "CMDC"
+  type: "'container'"
+  components:
+    - chart: "'online-short'"
+      type: "'overview-dot'"
+    - type: "'summon-button'"
+      parameters:
+        - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.*
+        - VirtualParameters.VLAN-IP1
+        - VirtualParameters.VLAN-IP2
+        - VirtualParameters.VLAN-IP3
+        - VirtualParameters.VLAN-IP4
+        - VirtualParameters.Binding-IP1
+        - VirtualParameters.Binding-IP2
+        - VirtualParameters.Binding-IP3
+        - VirtualParameters.Binding-IP4
+    - type: "'parameter-list'"
+      parameters:
+        - label: "'Binding IP1'"
+          parameter: VirtualParameters.Binding-IP1
+        - label: "'Binding IP2'"
+          parameter: VirtualParameters.Binding-IP2
+        - label: "'Binding IP3'"
+          parameter: VirtualParameters.Binding-IP3
+        - label: "'Binding IP4'"
+          parameter: VirtualParameters.Binding-IP4
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'VLAN'"
+          parameter: X_CMCC_VLANIDMark
+        - label: "'Mode'"
+          parameter: AddressingType
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'Subnet Mask'"
+          parameter: SubnetMask
+        - label: "'Gateway'"
+          parameter: DefaultGateway
+        - label: "'DNS'"
+          parameter: DNSServers
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'VLAN'"
+          parameter: X_CMCC_VLANIDMark
+        - label: "'Mode'"
+          parameter: AddressingType
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'Subnet Mask'"
+          parameter: SubnetMask
+        - label: "'Gateway'"
+          parameter: DefaultGateway
+        - label: "'DNS'"
+          parameter: DNSServers
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.3.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'VLAN'"
+          parameter: X_CMCC_VLANIDMark
+        - label: "'Mode'"
+          parameter: AddressingType
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'Subnet Mask'"
+          parameter: SubnetMask
+        - label: "'Gateway'"
+          parameter: DefaultGateway
+        - label: "'DNS'"
+          parameter: DNSServers
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.4.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'VLAN'"
+          parameter: X_CMCC_VLANIDMark
+        - label: "'Mode'"
+          parameter: AddressingType
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'Subnet Mask'"
+          parameter: SubnetMask
+        - label: "'Gateway'"
+          parameter: DefaultGateway
+        - label: "'DNS'"
+          parameter: DNSServers
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+- filter: >
+          VirtualParameters.KnownManufacturer = "ZIONCOM"
+  type: "'container'"
+  components:
+    - chart: "'online-short'"
+      type: "'overview-dot'"
+    - type: "'summon-button'"
+      parameters:
+        - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.*
+        - VirtualParameters.VLAN-IP1
+        - VirtualParameters.VLAN-IP2
+        - VirtualParameters.VLAN-IP3
+        - VirtualParameters.VLAN-IP4
+        - VirtualParameters.Binding-IP1
+        - VirtualParameters.Binding-IP2
+        - VirtualParameters.Binding-IP3
+        - VirtualParameters.Binding-IP4
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'Mode'"
+          parameter: AddressingType
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'Subnet Mask'"
+          parameter: SubnetMask
+        - label: "'Gateway'"
+          parameter: DefaultGateway
+        - label: "'DNS'"
+          parameter: DNSServers
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+- filter: >
+          VirtualParameters.KnownManufacturer = "Other" OR
+          VirtualParameters.KnownManufacturer = "CIOT" OR
+          VirtualParameters.KnownManufacturer = "GGCL" OR
+          VirtualParameters.KnownManufacturer = "ZTE"
+  type: "'container'"
   components:
     - chart: "'online-short'"
       type: "'overview-dot'"
@@ -230,22 +565,6 @@
           parameter: NATEnabled
         - label: "'Type'"
           parameter: ConnectionType
-        - label: "'LAN1'"
-          parameter: X_HW_LANBIND.Lan1Enable
-        - label: "'LAN2'"
-          parameter: X_HW_LANBIND.Lan2Enable
-        - label: "'LAN3'"
-          parameter: X_HW_LANBIND.Lan3Enable
-        - label: "'LAN4'"
-          parameter: X_HW_LANBIND.Lan4Enable
-        - label: "'SSID1'"
-          parameter: X_HW_LANBIND.SSID1Enable
-        - label: "'SSID2'"
-          parameter: X_HW_LANBIND.SSID2Enable
-        - label: "'SSID3'"
-          parameter: X_HW_LANBIND.SSID3Enable
-        - label: "'SSID4'"
-          parameter: X_HW_LANBIND.SSID4Enable
     - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection
       type: "'parameter-table'"
       childParameters:
@@ -267,22 +586,6 @@
           parameter: NATEnabled
         - label: "'Type'"
           parameter: ConnectionType
-        - label: "'LAN1'"
-          parameter: X_HW_LANBIND.Lan1Enable
-        - label: "'LAN2'"
-          parameter: X_HW_LANBIND.Lan2Enable
-        - label: "'LAN3'"
-          parameter: X_HW_LANBIND.Lan3Enable
-        - label: "'LAN4'"
-          parameter: X_HW_LANBIND.Lan4Enable
-        - label: "'SSID1'"
-          parameter: X_HW_LANBIND.SSID1Enable
-        - label: "'SSID2'"
-          parameter: X_HW_LANBIND.SSID2Enable
-        - label: "'SSID3'"
-          parameter: X_HW_LANBIND.SSID3Enable
-        - label: "'SSID4'"
-          parameter: X_HW_LANBIND.SSID4Enable
     - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.3.WANIPConnection
       type: "'parameter-table'"
       childParameters:
@@ -304,22 +607,6 @@
           parameter: NATEnabled
         - label: "'Type'"
           parameter: ConnectionType
-        - label: "'LAN1'"
-          parameter: X_HW_LANBIND.Lan1Enable
-        - label: "'LAN2'"
-          parameter: X_HW_LANBIND.Lan2Enable
-        - label: "'LAN3'"
-          parameter: X_HW_LANBIND.Lan3Enable
-        - label: "'LAN4'"
-          parameter: X_HW_LANBIND.Lan4Enable
-        - label: "'SSID1'"
-          parameter: X_HW_LANBIND.SSID1Enable
-        - label: "'SSID2'"
-          parameter: X_HW_LANBIND.SSID2Enable
-        - label: "'SSID3'"
-          parameter: X_HW_LANBIND.SSID3Enable
-        - label: "'SSID4'"
-          parameter: X_HW_LANBIND.SSID4Enable
     - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.4.WANIPConnection
       type: "'parameter-table'"
       childParameters:
@@ -341,6 +628,49 @@
           parameter: NATEnabled
         - label: "'Type'"
           parameter: ConnectionType
+# WAN PPP
+- element: "'div'"
+  type: "'container'"
+  components:
+    - element: "'h2'"
+      type: "'container'"
+      components:
+        - "'📥 WAN PPP'"
+- filter: VirtualParameters.KnownManufacturer = "Huawei Technologies Co., Ltd"
+  type: "'container'"
+  components:
+    - chart: "'online-short'"
+      type: "'overview-dot'"
+    - type: "'summon-button'"
+      parameters:
+        - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANPPPConnection.*.*
+        - VirtualParameters.VLAN-PPP1
+        - VirtualParameters.VLAN-PPP2
+        - VirtualParameters.VLAN-PPP3
+        - VirtualParameters.VLAN-PPP4
+        - VirtualParameters.Binding-PPP1
+        - VirtualParameters.Binding-PPP2
+        - VirtualParameters.Binding-PPP3
+        - VirtualParameters.Binding-PPP4
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Status'"
+          parameter: ConnectionStatus
+        - label: "'Name'"
+          parameter: Name
+        - label: "'VLAN'"
+          parameter: X_HW_VLAN
+        - label: "'Username'"
+          parameter: Username
+        - label: "'Password'"
+          parameter: Password
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
         - label: "'LAN1'"
           parameter: X_HW_LANBIND.Lan1Enable
         - label: "'LAN2'"
@@ -357,14 +687,254 @@
           parameter: X_HW_LANBIND.SSID3Enable
         - label: "'SSID4'"
           parameter: X_HW_LANBIND.SSID4Enable
-- element: "'div'"
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANPPPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Status'"
+          parameter: ConnectionStatus
+        - label: "'Name'"
+          parameter: Name
+        - label: "'VLAN'"
+          parameter: X_HW_VLAN
+        - label: "'Username'"
+          parameter: Username
+        - label: "'Password'"
+          parameter: Password
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.3.WANPPPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Status'"
+          parameter: ConnectionStatus
+        - label: "'Name'"
+          parameter: Name
+        - label: "'VLAN'"
+          parameter: X_HW_VLAN
+        - label: "'Username'"
+          parameter: Username
+        - label: "'Password'"
+          parameter: Password
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.4.WANPPPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Status'"
+          parameter: ConnectionStatus
+        - label: "'Name'"
+          parameter: Name
+        - label: "'VLAN'"
+          parameter: X_HW_VLAN
+        - label: "'Username'"
+          parameter: Username
+        - label: "'Password'"
+          parameter: Password
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+- filter: >
+          VirtualParameters.KnownManufacturer = "CMDC"
   type: "'container'"
   components:
-    - element: "'h2'"
-      type: "'container'"
-      components:
-        - "'📥 WAN PPP'"
-- type: "'container'"
+    - chart: "'online-short'"
+      type: "'overview-dot'"
+    - type: "'summon-button'"
+      parameters:
+        - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANPPPConnection.*.*
+        - VirtualParameters.VLAN-PPP1
+        - VirtualParameters.VLAN-PPP2
+        - VirtualParameters.VLAN-PPP3
+        - VirtualParameters.VLAN-PPP4
+        - VirtualParameters.Binding-PPP1
+        - VirtualParameters.Binding-PPP2
+        - VirtualParameters.Binding-PPP3
+        - VirtualParameters.Binding-PPP4
+    - type: "'parameter-list'"
+      parameters:
+        - label: "'Binding PPP1'"
+          parameter: VirtualParameters.Binding-PPP1
+        - label: "'Binding PPP2'"
+          parameter: VirtualParameters.Binding-PPP2
+        - label: "'Binding PPP3'"
+          parameter: VirtualParameters.Binding-PPP3
+        - label: "'Binding PPP4'"
+          parameter: VirtualParameters.Binding-PPP4
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Status'"
+          parameter: ConnectionStatus
+        - label: "'Name'"
+          parameter: Name
+        - label: "'VLAN'"
+          parameter: X_CMCC_VLANIDMark
+        - label: "'Username'"
+          parameter: Username
+        - label: "'Password'"
+          parameter: Password
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANPPPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Status'"
+          parameter: ConnectionStatus
+        - label: "'Name'"
+          parameter: Name
+        - label: "'VLAN'"
+          parameter: X_CMCC_VLANIDMark
+        - label: "'Username'"
+          parameter: Username
+        - label: "'Password'"
+          parameter: Password
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.3.WANPPPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Status'"
+          parameter: ConnectionStatus
+        - label: "'Name'"
+          parameter: Name
+        - label: "'VLAN'"
+          parameter: X_CMCC_VLANIDMark
+        - label: "'Username'"
+          parameter: Username
+        - label: "'Password'"
+          parameter: Password
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.4.WANPPPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Status'"
+          parameter: ConnectionStatus
+        - label: "'Name'"
+          parameter: Name
+        - label: "'VLAN'"
+          parameter: X_CMCC_VLANIDMark
+        - label: "'Username'"
+          parameter: Username
+        - label: "'Password'"
+          parameter: Password
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+- filter: >
+          VirtualParameters.KnownManufacturer = "ZIONCOM"
+  type: "'container'"
+  components:
+    - chart: "'online-short'"
+      type: "'overview-dot'"
+    - type: "'summon-button'"
+      parameters:
+        - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANPPPConnection.*.*
+        - VirtualParameters.VLAN-PPP1
+        - VirtualParameters.VLAN-PPP2
+        - VirtualParameters.VLAN-PPP3
+        - VirtualParameters.VLAN-PPP4
+        - VirtualParameters.Binding-PPP1
+        - VirtualParameters.Binding-PPP2
+        - VirtualParameters.Binding-PPP3
+        - VirtualParameters.Binding-PPP4
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Status'"
+          parameter: ConnectionStatus
+        - label: "'Name'"
+          parameter: Name
+        - label: "'Username'"
+          parameter: Username
+        - label: "'Password'"
+          parameter: Password
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+- filter: >
+          VirtualParameters.KnownManufacturer = "Other" OR
+          VirtualParameters.KnownManufacturer = "CIOT" OR
+          VirtualParameters.KnownManufacturer = "GGCL" OR
+          VirtualParameters.KnownManufacturer = "ZTE"
+  type: "'container'"
   components:
     - chart: "'online-short'"
       type: "'overview-dot'"
@@ -414,22 +984,6 @@
           parameter: NATEnabled
         - label: "'Type'"
           parameter: ConnectionType
-        - label: "'LAN1'"
-          parameter: X_HW_LANBIND.Lan1Enable
-        - label: "'LAN2'"
-          parameter: X_HW_LANBIND.Lan2Enable
-        - label: "'LAN3'"
-          parameter: X_HW_LANBIND.Lan3Enable
-        - label: "'LAN4'"
-          parameter: X_HW_LANBIND.Lan4Enable
-        - label: "'SSID1'"
-          parameter: X_HW_LANBIND.SSID1Enable
-        - label: "'SSID2'"
-          parameter: X_HW_LANBIND.SSID2Enable
-        - label: "'SSID3'"
-          parameter: X_HW_LANBIND.SSID3Enable
-        - label: "'SSID4'"
-          parameter: X_HW_LANBIND.SSID4Enable
     - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANPPPConnection
       type: "'parameter-table'"
       childParameters:
@@ -447,22 +1001,6 @@
           parameter: NATEnabled
         - label: "'Type'"
           parameter: ConnectionType
-        - label: "'LAN1'"
-          parameter: X_HW_LANBIND.Lan1Enable
-        - label: "'LAN2'"
-          parameter: X_HW_LANBIND.Lan2Enable
-        - label: "'LAN3'"
-          parameter: X_HW_LANBIND.Lan3Enable
-        - label: "'LAN4'"
-          parameter: X_HW_LANBIND.Lan4Enable
-        - label: "'SSID1'"
-          parameter: X_HW_LANBIND.SSID1Enable
-        - label: "'SSID2'"
-          parameter: X_HW_LANBIND.SSID2Enable
-        - label: "'SSID3'"
-          parameter: X_HW_LANBIND.SSID3Enable
-        - label: "'SSID4'"
-          parameter: X_HW_LANBIND.SSID4Enable
     - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.3.WANPPPConnection
       type: "'parameter-table'"
       childParameters:
@@ -480,22 +1018,6 @@
           parameter: NATEnabled
         - label: "'Type'"
           parameter: ConnectionType
-        - label: "'LAN1'"
-          parameter: X_HW_LANBIND.Lan1Enable
-        - label: "'LAN2'"
-          parameter: X_HW_LANBIND.Lan2Enable
-        - label: "'LAN3'"
-          parameter: X_HW_LANBIND.Lan3Enable
-        - label: "'LAN4'"
-          parameter: X_HW_LANBIND.Lan4Enable
-        - label: "'SSID1'"
-          parameter: X_HW_LANBIND.SSID1Enable
-        - label: "'SSID2'"
-          parameter: X_HW_LANBIND.SSID2Enable
-        - label: "'SSID3'"
-          parameter: X_HW_LANBIND.SSID3Enable
-        - label: "'SSID4'"
-          parameter: X_HW_LANBIND.SSID4Enable
     - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.4.WANPPPConnection
       type: "'parameter-table'"
       childParameters:
@@ -513,22 +1035,6 @@
           parameter: NATEnabled
         - label: "'Type'"
           parameter: ConnectionType
-        - label: "'LAN1'"
-          parameter: X_HW_LANBIND.Lan1Enable
-        - label: "'LAN2'"
-          parameter: X_HW_LANBIND.Lan2Enable
-        - label: "'LAN3'"
-          parameter: X_HW_LANBIND.Lan3Enable
-        - label: "'LAN4'"
-          parameter: X_HW_LANBIND.Lan4Enable
-        - label: "'SSID1'"
-          parameter: X_HW_LANBIND.SSID1Enable
-        - label: "'SSID2'"
-          parameter: X_HW_LANBIND.SSID2Enable
-        - label: "'SSID3'"
-          parameter: X_HW_LANBIND.SSID3Enable
-        - label: "'SSID4'"
-          parameter: X_HW_LANBIND.SSID4Enable
 - element: '"div"'
   type: "'container'"
   components:

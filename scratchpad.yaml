@@ -1,0 +1,172 @@
+# parameter lan L3 mode
+# InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2.X_HW_L3Enable
+
+# InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1.IdleDisconnectTime
+
+# InternetGatewayDevice.X_HW_Security.AclServices.HTTPWanEnable
+# remote web huawei fw biru
+# true bisa di remote
+# false tidak bisa di remote
+
+# InternetGatewayDevice.X_HW_Security.AclServices.WanAccess
+# ini huawei fw merah
+# InternetGatewayDevice.X_HW_Security.AclServices.WanAccess.1.Enable = 1
+# InternetGatewayDevice.X_HW_Security.AclServices.WanAccess.1.Protocol = HTTP,FTP,TELNET,SSH,ICMP
+# InternetGatewayDevice.X_HW_Security.AclServices.WanAccess.1.WanName = wan1.1.ip1
+
+- element: "'div'"
+  type: "'container'"
+  components:
+    - element: "'h2'"
+      type: "'container'"
+      components:
+        - "'📥 WAN IP'"
+- type: "'container'"
+  components:
+    - chart: "'online-short'"
+      type: "'overview-dot'"
+    - type: "'summon-button'"
+      parameters:
+        - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.*
+        - VirtualParameters.VLAN-IP1
+        - VirtualParameters.VLAN-IP2
+        - VirtualParameters.VLAN-IP3
+        - VirtualParameters.VLAN-IP4
+        - VirtualParameters.Binding-IP1
+        - VirtualParameters.Binding-IP2
+        - VirtualParameters.Binding-IP3
+        - VirtualParameters.Binding-IP4
+    - type: "'parameter-list'"
+      parameters:
+        - label: "'VLAN IP1'"
+          parameter: VirtualParameters.VLAN-IP1
+        - label: "'VLAN IP2'"
+          parameter: VirtualParameters.VLAN-IP2
+        - label: "'VLAN IP3'"
+          parameter: VirtualParameters.VLAN-IP3
+        - label: "'VLAN IP4'"
+          parameter: VirtualParameters.VLAN-IP4
+        - label: "'Binding IP1'"
+          parameter: VirtualParameters.Binding-IP1
+        - label: "'Binding IP2'"
+          parameter: VirtualParameters.Binding-IP2
+        - label: "'Binding IP3'"
+          parameter: VirtualParameters.Binding-IP3
+        - label: "'Binding IP4'"
+          parameter: VirtualParameters.Binding-IP4
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.2.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.3.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable
+    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.4.WANIPConnection
+      type: "'parameter-table'"
+      childParameters:
+        - label: "'Name'"
+          parameter: Name
+        - label: "'MAC Address'"
+          parameter: MACAddress
+        - label: "'IP Address'"
+          parameter: ExternalIPAddress
+        - label: "'NAT'"
+          parameter: NATEnabled
+        - label: "'Type'"
+          parameter: ConnectionType
+        - label: "'LAN1'"
+          parameter: X_HW_LANBIND.Lan1Enable
+        - label: "'LAN2'"
+          parameter: X_HW_LANBIND.Lan2Enable
+        - label: "'LAN3'"
+          parameter: X_HW_LANBIND.Lan3Enable
+        - label: "'LAN4'"
+          parameter: X_HW_LANBIND.Lan4Enable
+        - label: "'SSID1'"
+          parameter: X_HW_LANBIND.SSID1Enable
+        - label: "'SSID2'"
+          parameter: X_HW_LANBIND.SSID2Enable
+        - label: "'SSID3'"
+          parameter: X_HW_LANBIND.SSID3Enable
+        - label: "'SSID4'"
+          parameter: X_HW_LANBIND.SSID4Enable

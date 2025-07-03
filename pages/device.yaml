@@ -177,7 +177,9 @@
       type: "'container'"
       components:
         - "'📥 WAN IP'"
-- filter: VirtualParameters.KnownManufacturer = "Huawei Technologies Co., Ltd"
+- filter: >
+          VirtualParameters.KnownManufacturer = "Huawei Technologies Co., Ltd" OR
+          DeviceID.OUI = "00259E"
   type: "'container'"
   components:
     - chart: "'online-short'"
@@ -644,7 +646,9 @@
       type: "'container'"
       components:
         - "'📥 WAN PPP'"
-- filter: VirtualParameters.KnownManufacturer = "Huawei Technologies Co., Ltd"
+- filter: >
+          VirtualParameters.KnownManufacturer = "Huawei Technologies Co., Ltd" OR
+          DeviceID.OUI = "00259E"
   type: "'container'"
   components:
     - chart: "'online-short'"

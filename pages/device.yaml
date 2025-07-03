@@ -212,6 +212,8 @@
           parameter: DefaultGateway
         - label: "'DNS'"
           parameter: DNSServers
+        - label: "'Service'"
+          parameter: X_HW_SERVICELIST
         - label: "'NAT'"
           parameter: NATEnabled
         - label: "'Type'"
@@ -251,6 +253,8 @@
           parameter: DefaultGateway
         - label: "'DNS'"
           parameter: DNSServers
+        - label: "'Service'"
+          parameter: X_HW_SERVICELIST
         - label: "'NAT'"
           parameter: NATEnabled
         - label: "'Type'"
@@ -290,6 +294,8 @@
           parameter: DefaultGateway
         - label: "'DNS'"
           parameter: DNSServers
+        - label: "'Service'"
+          parameter: X_HW_SERVICELIST
         - label: "'NAT'"
           parameter: NATEnabled
         - label: "'Type'"
@@ -329,6 +335,8 @@
           parameter: DefaultGateway
         - label: "'DNS'"
           parameter: DNSServers
+        - label: "'Service'"
+          parameter: X_HW_SERVICELIST
         - label: "'NAT'"
           parameter: NATEnabled
         - label: "'Type'"
@@ -667,6 +675,8 @@
           parameter: Password
         - label: "'IP Address'"
           parameter: ExternalIPAddress
+        - label: "'Service'"
+          parameter: X_HW_SERVICELIST
         - label: "'NAT'"
           parameter: NATEnabled
         - label: "'Type'"
@@ -702,6 +712,8 @@
           parameter: Password
         - label: "'IP Address'"
           parameter: ExternalIPAddress
+        - label: "'Service'"
+          parameter: X_HW_SERVICELIST
         - label: "'NAT'"
           parameter: NATEnabled
         - label: "'Type'"
@@ -737,6 +749,8 @@
           parameter: Password
         - label: "'IP Address'"
           parameter: ExternalIPAddress
+        - label: "'Service'"
+          parameter: X_HW_SERVICELIST
         - label: "'NAT'"
           parameter: NATEnabled
         - label: "'Type'"
@@ -772,6 +786,8 @@
           parameter: Password
         - label: "'IP Address'"
           parameter: ExternalIPAddress
+        - label: "'Service'"
+          parameter: X_HW_SERVICELIST
         - label: "'NAT'"
           parameter: NATEnabled
         - label: "'Type'"

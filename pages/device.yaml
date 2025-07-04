@@ -178,7 +178,7 @@
       components:
         - "'📥 WAN IP'"
 - filter: >
-          VirtualParameters.KnownManufacturer = "Huawei Technologies Co., Ltd"
+          VirtualParameters.WANParameterModel = "XHW"
   type: "'container'"
   components:
     - chart: "'online-short'"
@@ -359,7 +359,7 @@
         - label: "'SSID4'"
           parameter: X_HW_LANBIND.SSID4Enable
 - filter: >
-          VirtualParameters.KnownManufacturer = "CMDC"
+          VirtualParameters.WANParameterModel = "XCMCC"
   type: "'container'"
   components:
     - chart: "'online-short'"
@@ -478,48 +478,7 @@
         - label: "'Type'"
           parameter: ConnectionType
 - filter: >
-          VirtualParameters.KnownManufacturer = "ZIONCOM"
-  type: "'container'"
-  components:
-    - chart: "'online-short'"
-      type: "'overview-dot'"
-    - type: "'summon-button'"
-      parameters:
-        - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.*
-        - VirtualParameters.VLAN-IP1
-        - VirtualParameters.VLAN-IP2
-        - VirtualParameters.VLAN-IP3
-        - VirtualParameters.VLAN-IP4
-        - VirtualParameters.Binding-IP1
-        - VirtualParameters.Binding-IP2
-        - VirtualParameters.Binding-IP3
-        - VirtualParameters.Binding-IP4
-    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection
-      type: "'parameter-table'"
-      childParameters:
-        - label: "'Name'"
-          parameter: Name
-        - label: "'MAC Address'"
-          parameter: MACAddress
-        - label: "'Mode'"
-          parameter: AddressingType
-        - label: "'IP Address'"
-          parameter: ExternalIPAddress
-        - label: "'Subnet Mask'"
-          parameter: SubnetMask
-        - label: "'Gateway'"
-          parameter: DefaultGateway
-        - label: "'DNS'"
-          parameter: DNSServers
-        - label: "'NAT'"
-          parameter: NATEnabled
-        - label: "'Type'"
-          parameter: ConnectionType
-- filter: >
-          VirtualParameters.KnownManufacturer = "Other" OR
-          VirtualParameters.KnownManufacturer = "CIOT" OR
-          VirtualParameters.KnownManufacturer = "GGCL" OR
-          VirtualParameters.KnownManufacturer = "ZTE"
+          VirtualParameters.WANParameterModel = "Other"
   type: "'container'"
   components:
     - chart: "'online-short'"
@@ -646,7 +605,7 @@
       components:
         - "'📥 WAN PPP'"
 - filter: >
-          VirtualParameters.KnownManufacturer = "Huawei Technologies Co., Ltd"
+          VirtualParameters.WANParameterModel = "XHW"
   type: "'container'"
   components:
     - chart: "'online-short'"
@@ -811,7 +770,7 @@
         - label: "'SSID4'"
           parameter: X_HW_LANBIND.SSID4Enable
 - filter: >
-          VirtualParameters.KnownManufacturer = "CMDC"
+          VirtualParameters.WANParameterModel = "XCMCC"
   type: "'container'"
   components:
     - chart: "'online-short'"
@@ -914,44 +873,7 @@
         - label: "'Type'"
           parameter: ConnectionType
 - filter: >
-          VirtualParameters.KnownManufacturer = "ZIONCOM"
-  type: "'container'"
-  components:
-    - chart: "'online-short'"
-      type: "'overview-dot'"
-    - type: "'summon-button'"
-      parameters:
-        - InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANPPPConnection.*.*
-        - VirtualParameters.VLAN-PPP1
-        - VirtualParameters.VLAN-PPP2
-        - VirtualParameters.VLAN-PPP3
-        - VirtualParameters.VLAN-PPP4
-        - VirtualParameters.Binding-PPP1
-        - VirtualParameters.Binding-PPP2
-        - VirtualParameters.Binding-PPP3
-        - VirtualParameters.Binding-PPP4
-    - parameter: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection
-      type: "'parameter-table'"
-      childParameters:
-        - label: "'Status'"
-          parameter: ConnectionStatus
-        - label: "'Name'"
-          parameter: Name
-        - label: "'Username'"
-          parameter: Username
-        - label: "'Password'"
-          parameter: Password
-        - label: "'IP Address'"
-          parameter: ExternalIPAddress
-        - label: "'NAT'"
-          parameter: NATEnabled
-        - label: "'Type'"
-          parameter: ConnectionType
-- filter: >
-          VirtualParameters.KnownManufacturer = "Other" OR
-          VirtualParameters.KnownManufacturer = "CIOT" OR
-          VirtualParameters.KnownManufacturer = "GGCL" OR
-          VirtualParameters.KnownManufacturer = "ZTE"
+          VirtualParameters.WANParameterModel = "Other"
   type: "'container'"
   components:
     - chart: "'online-short'"

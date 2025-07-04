@@ -45,8 +45,8 @@ declare("InternetGatewayDevice.ManagementServer.ConnectionRequestURL", {path: fi
 //WAN
 declare("InternetGatewayDevice.WANDevice.1.WANCommonInterfaceConfig.WANAccessType", {path: hourly, value: hourly});
 declare("InternetGatewayDevice.WANDevice.1.WANConnectionNumberOfEntries", {path: fiveMin, value: fiveMin});
-declare("InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANPPPConnection.*.*.*", {path: fiveMin, value: fiveMin});
-declare("InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.*.*", {path: fiveMin, value: fiveMin});
+declare("InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANPPPConnection.*.*", {path: fiveMin, value: fiveMin});
+declare("InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.*", {path: fiveMin, value: fiveMin});
 declare("InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANPPPConnection.*.X_HW_LANBIND.*", {path: fiveMin, value: fiveMin});
 declare("InternetGatewayDevice.WANDevice.*.WANConnectionDevice.*.WANIPConnection.*.X_HW_LANBIND.*", {path: fiveMin, value: fiveMin});
 

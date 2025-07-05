@@ -34,6 +34,6 @@ declare("InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.*.X_HW_L3E
 declare("InternetGatewayDevice.X_HW_Security.X_HW_FirewallLevel", {value: fiveMin}, {value: "Custom"});
 
 // Set redial huawei
-declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANIPConnection.*.IdleDisconnectTime", {value: fiveMin}, {value: 0});
-declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANPPPConnection.*.IdleDisconnectTime", {value: fiveMin}, {value: 0});
-declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANPPPConnection.*.PPPLCPEcho", {value: fiveMin}, {value: 5});
+declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANIPConnection.*.IdleDisconnectTime", {value: daily}, {value: 0});
+declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANPPPConnection.*.IdleDisconnectTime", {value: daily}, {value: 0});
+declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANPPPConnection.*.PPPLCPEcho", {value: daily}, {value: 5});

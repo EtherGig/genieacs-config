@@ -36,4 +36,4 @@ declare("InternetGatewayDevice.X_HW_Security.X_HW_FirewallLevel", {value: fiveMi
 // Set redial huawei
 declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANIPConnection.*.IdleDisconnectTime", {value: daily}, {value: 0});
 declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANPPPConnection.*.IdleDisconnectTime", {value: daily}, {value: 0});
-declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANPPPConnection.*.PPPLCPEcho", {value: daily}, {value: 5});
+declare("InternetGatewayDevice.WANDevice.1.WANConnectionDevice.*.WANPPPConnection.*.PPPLCPEcho", {value: daily}, {value: 60});

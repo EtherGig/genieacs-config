@@ -1,10 +1,10 @@
-const hourly = Date.now(3600000);
+const hourly = Date.now() - 3600000;
+const fiveMin = Date.now() - 300000;
 
 // Refresh basic parameters hourly
 declare("InternetGatewayDevice.DeviceInfo.HardwareVersion", {path: hourly, value: hourly});
 declare("InternetGatewayDevice.DeviceInfo.SoftwareVersion", {path: hourly, value: hourly});
 
-const fiveMin = Date.now(300000)
 
 //vparam
 declare("VirtualParameters.KnownManufacturer", {path: hourly, value: hourly});

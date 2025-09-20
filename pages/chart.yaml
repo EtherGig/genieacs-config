@@ -250,6 +250,10 @@ manufacturer:
 product-class:
   label: "'Product Class'"
   slices:
+    F663NV9:
+      color: "'#e0a101'"
+      filter: VirtualParameters.KnownProductClass = "F663NV9"
+      label: "'F663NV9'"
     G663-XPON:
       color: "'#0b4a00'"
       filter: VirtualParameters.KnownProductClass = "G663-XPON"
@@ -266,6 +270,10 @@ product-class:
       color: "'#0266e0'"
       filter: VirtualParameters.KnownProductClass = "H1s-3"
       label: "'H1s-3'"
+    HG8245A:
+      color: "'#428700'"
+      filter: VirtualParameters.KnownProductClass = "HG8245A"
+      label: "'HG8245A'"
     HS8145C5:
       color: "'#4287f5'"
       filter: VirtualParameters.KnownProductClass = "HS8145C5"

@@ -35,6 +35,7 @@ declare("VirtualParameters.DeviceUptime", {path: fiveMin, value: fiveMin});
 declare("VirtualParameters.SSID1-Name", {path: fiveMin, value: fiveMin});
 declare("VirtualParameters.SSID1-Password", {path: fiveMin, value: fiveMin});
 declare("VirtualParameters.SSID1-Security", {path: fiveMin, value: fiveMin});
+declare("VirtualParameters.WANParameterModel", {path: fiveMin, value: fiveMin});
 
 declare("VirtualParameters.LoginSuperUser", {path: fiveMin, value: fiveMin});
 declare("VirtualParameters.LoginSuperPass", {path: fiveMin, value: fiveMin});

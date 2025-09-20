@@ -12,7 +12,7 @@ const informInterval = 600;
 // Unique inform offset per device for better load distribution
 const informTime = daily % 86400000;
 // ACS server url
-const acsUrl = "http://acs.annurnetwork.com:7547";
+const acsUrl = "http://acs.yourdomain.com:7547";
 
 // Push ACS Config
 declare("InternetGatewayDevice.ManagementServer.ConnectionRequestUsername", {value: daily}, {value: username});

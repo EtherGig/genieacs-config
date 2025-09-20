@@ -24,7 +24,8 @@ if ("value" in args[1]) {
         'InternetGatewayDevice.WANDevice.1.X_GponInterafceConfig.TransceiverTemperature',
         'InternetGatewayDevice.WANDevice.1.X_CMCC_EponInterfaceConfig.TransceiverTemperature',
         'InternetGatewayDevice.WANDevice.1.X_CMCC_EponInterfaceConfig.RXPower',
-        'InternetGatewayDevice.WANDevice.1.X_CU_WANEPONInterfaceConfig.OpticalTransceiver.Temperature'	
+        'InternetGatewayDevice.WANDevice.1.X_CU_WANEPONInterfaceConfig.OpticalTransceiver.Temperature',
+        'InternetGatewayDevice.WANDevice.1.X_ZTE-COM_WANPONInterfaceConfig.TransceiverTemperature'
     ];
 
     result = getParameterValue(keys);
